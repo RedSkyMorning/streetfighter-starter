@@ -14,8 +14,8 @@ $(document).ready(function() {
   $('.ryu-throwing').show();
   $('.hadouken').finish().show()
   .animate(
-  {'left': '300px'},
-  500,
+  {'left': '300px'},  //the error is somewhere in here because I had to 
+  500,                //change the margins for .hadoukin in my css
   function() {
   $(this).hide();
   $(this).css('left', '-212px');
@@ -33,8 +33,8 @@ $(document).ready(function() {
   		if (keyCode == 88) {
   			$('.ryu-ready').hide();
   			$('.ryu-cool').show();
-        //.keyup(function) {
-        //  $(.'ryu-cool').hide();
+        //.keyup(function) {       And I haven't figured this out
+        //  $(.'ryu-cool').hide();  yet either
         //  $('.ryu-ready').show();
         //}
   		}
